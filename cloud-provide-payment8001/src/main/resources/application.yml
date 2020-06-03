@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    # \u5F53\u524D\u6570\u636E\u6E90\u64CD\u4F5C\u7C7B\u578B
+    type: com.alibaba.druid.pool.DruidDataSource
+    # mysql\u9A71\u52A8\u7C7B
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://129.204.239.222:9001/db2019?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: uniseqroot
+    password: Pagoda@2017
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.cloud.soft.entities
