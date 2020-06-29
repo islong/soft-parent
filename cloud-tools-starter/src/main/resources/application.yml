@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /tools
+spring:
+  application:
+    name: cloud-tools-starter
+
+redisson:
+    address: redis://47.106.193.115:6399
+    password: sz20180101
+    timeout: 3000
